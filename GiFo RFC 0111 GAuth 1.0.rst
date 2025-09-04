@@ -1,18 +1,26 @@
 
-Gimel Foundation GmbH LDA e.c.	             		 
+Gimel Foundation GmbH LDA e.c.	 
+
 Author: Dr. Goetz G. Wehberg, Digital Supply Institute
-GiFo-Request for Comments: 0111                               	 
-Obsoletes: -                                           			 
+
+GiFo-Request for Comments: 0111 
+
+Obsoletes: -           
+
 Publication date: 1. August 2025 
+
 Category: Standards Track
+
 ISBN: 978-3-00-084039-5
 
 
 
-The GAuth 1.0 Authorization Framework
 
 
-Abstract
+**The GAuth 1.0 Authorization Framework**
+
+
+**Abstract**
 The GAuth authorization framework enables an artificial intelligence (AI, e.g., a digital agent, agentic AI or humanoid robot, respectively) to legitimize its power of attorney towards any other application including other AI and/or any other third party, including humans, on behalf of the owner of that AI by orchestrating an approval interaction, i.e. by owner allowing the AI to act and/or decide on its own behalf and legitimizing towards the relying third party, transparently and verifiably. 
 
 Status of This Memo
