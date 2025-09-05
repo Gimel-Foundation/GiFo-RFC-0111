@@ -1,61 +1,96 @@
 
-Gimel Foundation GmbH LDA e.c.	             		 
+Gimel Foundation GmbH LDA e.c.	 
+
 Author: Dr. Goetz G. Wehberg, Digital Supply Institute
-GiFo-Request for Comments: 0111                               	 
-Obsoletes: -                                           			 
+
+GiFo-Request for Comments: 0111     
+
+Obsoletes: -            
+
 Publication date: 1. August 2025 
+
 Category: Standards Track
+
 ISBN: 978-3-00-084039-5
 
 
 
-The GAuth 1.0 Authorization Framework
+
+**The GAuth 1.0 Authorization Framework**
 
 
-Abstract
+**Abstract**
+
 The GAuth authorization framework enables an artificial intelligence (AI, e.g., a digital agent, agentic AI or humanoid robot, respectively) to legitimize its power of attorney towards any other application including other AI and/or any other third party, including humans, on behalf of the owner of that AI by orchestrating an approval interaction, i.e. by owner allowing the AI to act and/or decide on its own behalf and legitimizing towards the relying third party, transparently and verifiably. 
 
-Status of This Memo
+
+**Status of This Memo**
+
 This is a Gimel Foundation Standards Track document. 
-This document is a product of the Gimel Foundation (GiFo).  It represents the current consensus of the Gimel Foundation community.  It has performed review and has been approved for publication. 
+
+This document is a product of the Gimel Foundation (GiFo). It represents the current consensus of the Gimel Foundation community. It has performed review and has been approved for publication. 
+
 Information about the status of this document, any errata, and how to provide feedback on it may be obtained at https://gimelfoundation.com or https://github.com/Gimel-Foundation.
 
-Legal notice 
-Copyright (c) 2025 Gimel Foundation and the persons identified as the document authors.  All rights are reserved.
-This document is subject to the Gimel Foundation's Legal Provisions Relating to GiFo Documents (see http://GimelFoundation.com or https://github.com/Gimel-Foundation) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include License text as described in Section 4. of the GiFo Legal Provisions Relating to Gimel Foundation Documents and are provided without warranty as described in the Provisions and its respective license conditions.
+
+**Legal notice**
+
+Copyright (c) 2025 Gimel Foundation and the persons identified as the document authors. All rights are reserved.
+
+This document is subject to the Gimel Foundation's Legal Provisions Relating to GiFo Documents (see http://GimelFoundation.com or https://github.com/Gimel-Foundation) in effect on the date of publication of this document. 
+Please review these documents carefully, as they describe your rights and restrictions with respect to this document. Code Components extracted from this document must include License text as described in Section 4. of the GiFo Legal Provisions Relating to Gimel Foundation Documents and are provided without warranty as described in the Provisions and its respective license conditions.
+
 The distinguished GAuth standard is protected by copy right and patent law. GAuth is an open-source standard based on OAuth, OpenID Connect and MCP. GAuth must not use exclusions (see Scope), which are subject to separate license conditions and are also protected by copy right as well as patent law.
+
 Implementations of GAuth must refer the Apache 2.0 license of OAuth and OpenID Connect as well as to the MIT license of MCP in line with its license conditions. Copyrights and licenses of these building blocks apply accordingly. 
+
 Implementations of GAuth must being licensed with Apache 2.0, granted by Gimel Foundation, and must not integrate exclusions (as per Scope statement of this Request for Comment). Defined exclusions of GAuth must refer to separate license conditions. 
 
-Notational Conventions
+
+**Notational Conventions**
 The key words "Must", "Must Not", "Required", "Shall", "Shall Not", "Should", "Should Not", "Recommended", "May", and "Optional" in the following specification are to be interpreted as described in IETF`s RFC 2119.
 
-Table of Contents
-1.	Scope
-2.	Nomenclature
-3.	Why GAuth
-4.	What GAuth is
-5.	How it works
-6.	Benefits
-7.	Next steps
 
-***
+1. Scope
+2. Nomenclature
+3. Why GAuth
+4. What GAuth is
+5. How it works
+6. Benefits
+7. Next steps
+
+**\*\*\***
  
-1.	Scope
-GAuth concerns the technical field of AI and particularly the governance of AI. With the increasing prevalence and performance of AI, there is a growing need for effective control and governance mechanisms to ensure their safe and responsible use. GAuth offers the solution for this. The GAuth standard offers an AI control protocol for digital agents, agentic teams of agents, humanoid robots and any other development of AI, which acts and decides on behalf of humans and/or organizations, which are being represented by humans. It acknowledges that the ultimate accountability of such actions and/or decisions are with such humans and/or organizations, respectively.  
-GAuth builds on the following standards as building blocks, thus is connected to these standards but adds distinguished complements in terms of its proprietary content, value-added, IP rights and overall license conditions. Building blocks include:
-•	OAuth or its alternatives, including but not limited to
-- RFC 6749
-- RFC 7636
-- Best Practices for OAuth 2.0 Security
-•	OpenID Connect or its alternatives, including but not limited to
-- OpenID Connect Discovery 1.0
-- OpenID Connect Dynamic Client Registration
-- OpenID Connect Session Management
-•	MCP or its alternatives, including but not limited to
-- MCP Implementation on Github (https://github.com/modelcontextprotocol)
+**1.	Scope**
 
-2.	Limitations on the right to make derivative works (Exclusions)
+GAuth concerns the technical field of AI and particularly the governance of AI. With the increasing prevalence and performance of AI, there is a growing need for effective control and governance mechanisms to ensure their safe and responsible use. GAuth offers the solution for this. The GAuth standard offers an AI control protocol for digital agents, agentic teams of agents, humanoid robots and any other development of AI, which acts and decides on behalf of humans and/or organizations, which are being represented by humans. It acknowledges that the ultimate accountability of such actions and/or decisions are with such humans and/or organizations, respectively.
+
+GAuth builds on the following standards as building blocks, thus is connected to these standards but adds distinguished complements in terms of its proprietary content, value-added, IP rights and overall license conditions. Building blocks include:
+
+- OAuth or its alternatives, including but not limited to  
+
+    \- RFC 6749  
+
+    \- RFC 7636  
+
+    \- Best Practices for OAuth 2.0 Security
+
+- OpenID Connect or its alternatives, including but not limited to  
+
+    \- OpenID Connect Discovery 1.0 
+
+    \- OpenID Connect Dynamic Client Registration  
+
+    \- OpenID Connect Session Management
+
+- MCP or its alternatives, including but not limited to  
+
+    \- MCP Implementation on Github (<https://github.com/modelcontextprotocol>)
+
+
+
+**2.	Limitations on the right to make derivative works (Exclusions)**
+
 GAuth is freely available as an open-source solution based on Apache 2.0 with the following exclusions. Users of GAuth Must Not – whether directly or indirectly – integrate: 
 •	The use of Web3, i.e., blockchain technology (including respective web3 tokens and smart contracts) for the extended token of GAuth, 
 •	the use of AI or AI operators, i.e., 
